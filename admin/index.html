@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin — The Rosalia BCN</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/admin/admin.css" />
+</head>
+<body class="admin-login-body">
+
+  <div class="admin-login-card">
+
+    <div class="admin-login-logo">
+      <img src="/images/THEROSALIA.png" alt="The Rosalia BCN" />
+    </div>
+
+    <div class="admin-login-divider"></div>
+
+    <h1 class="admin-login-title">Panel de Administración</h1>
+    <p class="admin-login-sub">Acceso restringido</p>
+
+    <div class="admin-login-error" id="login-error" role="alert"></div>
+
+    <form id="login-form" novalidate>
+      <div class="admin-form-group">
+        <label class="admin-form-label" for="login-email">Email</label>
+        <input
+          type="email"
+          id="login-email"
+          class="admin-form-input"
+          autocomplete="username"
+          placeholder="admin@therosaliabcn.com"
+          required
+        />
+      </div>
+      <div class="admin-form-group" style="margin-bottom:28px">
+        <label class="admin-form-label" for="login-password">Contraseña</label>
+        <input
+          type="password"
+          id="login-password"
+          class="admin-form-input"
+          autocomplete="current-password"
+          placeholder="••••••••"
+          required
+        />
+      </div>
+      <button type="submit" class="admin-btn admin-btn--primary admin-btn--full" id="login-btn">
+        Acceder
+      </button>
+    </form>
+
+  </div>
+
+  <script src="/admin/admin.js"></script>
+</body>
+</html>
