@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Rosalia BCN — Brunch &amp; Dining Barcelona</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ══ HEADER ══ -->
+  <header class="header" id="header">
+    <div class="header-inner">
+
+      <a href="index.html" class="header-logo">
+        <img src="images/THEROSALIA.png" alt="The Rosalia BCN" class="logo-img" />
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="reservas.html" class="nav-link" data-i18n="nav.reservas">Reservas</a></li>
+          <li><a href="nosotros.html" class="nav-link" data-i18n="nav.nosotros">Nosotros</a></li>
+          <li><a href="menu.html" class="nav-link" data-i18n="nav.menu">Menú</a></li>
+          <li><a href="#" class="nav-link" data-i18n="nav.franquicias">Franquicias</a></li>
+          <li><a href="eventos.html" class="nav-link" data-i18n="nav.eventos">Eventos</a></li>
+          <li><a href="blog.html" class="nav-link" data-i18n="nav.blog">Blog</a></li>
+        </ul>
+        <div class="lang-switcher">
+          <span class="lang lang--active" data-lang="es">ES</span>
+          <span class="lang-sep">|</span>
+          <span class="lang" data-lang="en">EN</span>
+        </div>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-glow hero-glow--tl"></div>
+    <div class="hero-glow hero-glow--br"></div>
+
+    <div class="hero-content">
+      <img src="images/isologo.png" alt="The Rosalia" class="hero-isologo" />
+      <div class="hero-rule"></div>
+      <p class="hero-tagline" data-i18n="hero.tagline">Brunch &nbsp;·&nbsp; Dining &nbsp;·&nbsp; Live Music &nbsp;·&nbsp; Barcelona</p>
+      <a href="reservas.html" class="btn btn--outline hero-cta" data-i18n="hero.cta">Reservar mesa</a>
+    </div>
+
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <span class="scroll-bar"></span>
+    </div>
+  </section>
+
+  <!-- ══ ABOUT ══ -->
+  <section class="about" id="about">
+    <div class="container">
+      <span class="eyebrow reveal" data-i18n="about.eyebrow">Nuestra Esencia</span>
+      <h2 class="section-title reveal reveal--delay-1" data-i18n-html="about.title">
+        Más que un restaurante,<br />
+        <em>una emoción</em>
+      </h2>
+      <p class="section-body reveal reveal--delay-2" data-i18n="about.body">
+        De los mejores brunchs de Barcelona a noches con espectáculo en vivo. Cada visita, una experiencia única e irrepetible.
+      </p>
+      <div class="gold-rule reveal reveal--delay-3"></div>
+    </div>
+  </section>
+
+  <!-- ══ HIGHLIGHTS ══ -->
+  <section class="highlights" id="highlights">
+    <div class="container">
+      <div class="highlights-grid">
+
+        <article class="card reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="20" cy="17" r="8" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M12 32c0-4.418 3.582-7 8-7s8 2.582 8 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M20 9v4M16 11l2 3M24 11l-2 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="card-title" data-i18n="card1.title">Brunch de Autor</h3>
+          <p class="card-text" data-i18n="card1.text">Japanese Fluffy Pancakes, Eggs Benedict, tostadas creativas y açaí bowls. Disponible cada día hasta las 16:00.</p>
+        </article>
+
+        <article class="card card--featured reveal reveal--delay-1">
+          <div class="card-icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M8 28V16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M14 28V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M20 28V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M26 28V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M32 28V18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="card-title" data-i18n="card2.title">Noche con Espectáculo</h3>
+          <p class="card-text" data-i18n="card2.text">DJ sets, violonchelo en vivo y performers únicos. Cada noche, una atmósfera irrepetible.</p>
+        </article>
+
+        <article class="card reveal reveal--delay-2">
+          <div class="card-icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="6" y="14" width="28" height="20" rx="3" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M13 14V10a7 7 0 0 1 14 0v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="20" cy="23" r="2.5" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 class="card-title" data-i18n="card3.title">The R Lounge</h3>
+          <p class="card-text" data-i18n="card3.text">Terraza exclusiva con vistas al mar. El espacio perfecto para celebraciones privadas y eventos corporativos.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ MENU PREVIEW ══ -->
+  <section class="menu-preview" id="menu">
+    <div class="container">
+      <span class="eyebrow reveal" data-i18n="menu.eyebrow">Nuestra Cocina</span>
+      <h2 class="section-title reveal reveal--delay-1" data-i18n-html="menu.title">
+        Una selección<br />
+        <em>para cada momento</em>
+      </h2>
+      <div class="menu-grid">
+
+        <div class="menu-cat reveal">
+          <div class="menu-cat-icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M10 28h20M12 28V18a8 8 0 1 1 16 0v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M28 18h2a4 4 0 0 1 0 8h-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="menu-cat-name" data-i18n="menucat1.name">Brunch &amp; Desayunos</h3>
+          <ul class="menu-cat-items">
+            <li>Japanese Fluffy Pancakes</li>
+            <li>Egg Benedict Royal</li>
+            <li>Tostada Rosalia</li>
+            <li>Brunch Mediterráneo</li>
+          </ul>
+          <span class="menu-cat-range" data-i18n="menucat1.range">Desde €12.95</span>
+        </div>
+
+        <div class="menu-cat reveal reveal--delay-1">
+          <div class="menu-cat-icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M8 32h24M14 32V20h12v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20 20v-6a6 6 0 0 1 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="26" cy="8" r="2" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 class="menu-cat-name" data-i18n="menucat2.name">Almuerzo &amp; Cenas</h3>
+          <ul class="menu-cat-items">
+            <li>Black Angus Rumsteak</li>
+            <li>Salmón Teriyaki</li>
+            <li>Pasta Trufa &amp; Salmón</li>
+            <li>Entrecot Imperial</li>
+          </ul>
+          <span class="menu-cat-range" data-i18n="menucat2.range">Desde €16.95</span>
+        </div>
+
+        <div class="menu-cat reveal reveal--delay-2">
+          <div class="menu-cat-icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="20" cy="20" r="12" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M14 20h12M20 14v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="menu-cat-name" data-i18n="menucat3.name">Street Food Fusion</h3>
+          <ul class="menu-cat-items">
+            <li>Burger Angus Portobello</li>
+            <li>French Tacos</li>
+            <li>Burger Chicken Dubai</li>
+            <li>Nachos &amp; Guacamole</li>
+          </ul>
+          <span class="menu-cat-range" data-i18n="menucat3.range">Desde €11.00</span>
+        </div>
+
+        <div class="menu-cat reveal reveal--delay-3">
+          <div class="menu-cat-icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M20 6c-.5 3-3 5-3 8s3 5 3 8-3 5-3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M26 10c-.4 2.4-2.4 4-2.4 6.4S26 20.4 26 23s-2 4-2 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M14 10c-.4 2.4-2.4 4-2.4 6.4S14 20.4 14 23s-2 4-2 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="menu-cat-name" data-i18n="menucat4.name">Dulces &amp; Bebidas</h3>
+          <ul class="menu-cat-items">
+            <li>Milkshakes Artesanales</li>
+            <li>Cócteles de Autor</li>
+            <li>Mimosas &amp; Sangría</li>
+            <li>Specialty Coffee</li>
+          </ul>
+          <span class="menu-cat-range" data-i18n="menucat4.range">Desde €5.95</span>
+        </div>
+
+      </div>
+      <div class="menu-cta reveal">
+        <a href="menu.html" class="btn btn--outline" data-i18n="menu.cta">Ver menú completo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ EXPERIENCE ══ -->
+  <section class="experience" id="experience">
+    <div class="container experience-inner">
+      <div class="experience-text">
+        <span class="eyebrow eyebrow--light reveal" data-i18n="exp.eyebrow">Noche en The Rosalia</span>
+        <h2 class="section-title experience-title reveal reveal--delay-1" data-i18n-html="exp.title">
+          Del desayuno<br />
+          <em>al espectáculo</em>
+        </h2>
+        <p class="section-body experience-body reveal reveal--delay-2" data-i18n="exp.body">
+          Música en vivo, DJ sets y performers únicos. Cada noche, The Rosalia se transforma en algo más.
+        </p>
+        <a href="eventos.html" class="btn btn--gold reveal reveal--delay-3" data-i18n="exp.cta">Ver eventos</a>
+      </div>
+      <div class="experience-features">
+        <div class="exp-feat reveal">
+          <div class="exp-feat-icon">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 22V10l14-3v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="8" cy="22" r="3" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="22" cy="19" r="3" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <span class="exp-feat-label" data-i18n="exp.feat1">Música en Vivo</span>
+        </div>
+        <div class="exp-feat reveal reveal--delay-1">
+          <div class="exp-feat-icon">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16" cy="16" r="10" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="16" cy="16" r="4" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M16 6v4M16 22v4M6 16h4M22 16h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="exp-feat-label" data-i18n="exp.feat2">DJ Sets</span>
+        </div>
+        <div class="exp-feat reveal reveal--delay-2">
+          <div class="exp-feat-icon">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 4l2.5 7.5H26l-6.4 4.6 2.4 7.4L16 19l-6 4.5 2.4-7.4L6 11.5h7.5L16 4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="exp-feat-label" data-i18n="exp.feat3">Performers</span>
+        </div>
+        <div class="exp-feat reveal reveal--delay-3">
+          <div class="exp-feat-icon">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="10" width="24" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M10 10V8a6 6 0 0 1 12 0v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="16" cy="19" r="2.5" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <span class="exp-feat-label" data-i18n="exp.feat4">Eventos Privados</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ RESERVE CTA ══ -->
+  <section class="reserve" id="reserve">
+    <div class="reserve-blob reserve-blob--left" aria-hidden="true"></div>
+    <div class="reserve-blob reserve-blob--right" aria-hidden="true"></div>
+    <div class="container reserve-inner">
+      <span class="eyebrow eyebrow--light reveal" data-i18n="reserve.eyebrow">Reservas</span>
+      <h2 class="section-title reserve-title reveal reveal--delay-1" data-i18n-html="reserve.title">
+        ¿Listo para vivir<br />
+        <em>la experiencia Rosalia?</em>
+      </h2>
+      <p class="section-body reserve-body reveal reveal--delay-2" data-i18n="reserve.body">Reserva tu mesa online o llámanos directamente. Te esperamos.</p>
+      <div class="reserve-actions reveal reveal--delay-3">
+        <a href="reservas.html" class="btn btn--gold" data-i18n="reserve.cta">Reservar mesa</a>
+        <a href="tel:+34677432810" class="reserve-phone">+34 677 43 28 10</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer" id="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-col footer-col--brand">
+        <img src="images/THEROSALIA.png" alt="The Rosalia BCN" class="footer-logo" />
+        <p class="footer-tagline">Brunch · Dining · Live Music · Barcelona</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/therosaliabcn/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="index.html" class="social-link" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/>
+            </svg>
+          </a>
+          <a href="index.html" class="social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col footer-col--info">
+        <h4 class="footer-heading" data-i18n="footer.contact-heading">Contáctanos</h4>
+        <address class="footer-address" data-i18n="footer.location">Barcelona, España</address>
+        <p class="footer-hours" data-i18n="footer.hours1">Lun – Vie &nbsp; 10:00 – 23:00</p>
+        <p class="footer-hours" data-i18n="footer.hours2">Sáb – Dom &nbsp; 9:00 – 23:00</p>
+        <a href="tel:+34677432810" class="footer-link">+34 677 43 28 10</a>
+        <a href="mailto:therosaliabcnmanagement@gmail.com" class="footer-link">therosaliabcnmanagement@gmail.com</a>
+      </div>
+
+      <div class="footer-col footer-col--links">
+        <h4 class="footer-heading" data-i18n="footer.explore-heading">Explora</h4>
+        <ul class="footer-nav">
+          <li><a href="menu.html" class="footer-link" data-i18n="footer.menu-link">Menú</a></li>
+          <li><a href="reservas.html" class="footer-link" data-i18n="footer.reservas-link">Reservas</a></li>
+          <li><a href="eventos.html" class="footer-link" data-i18n="footer.eventos-link">Eventos</a></li>
+          <li><a href="#" class="footer-link" data-i18n="footer.franquicias-link">Franquicias</a></li>
+          <li><a href="blog.html" class="footer-link" data-i18n="footer.blog-link">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col--badge">
+        <img src="images/turisme.png" alt="Barcelona Turisme — Membre" class="footer-badge" />
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p data-i18n="footer.copyright">&copy; 2025 The Rosalia BCN. Todos los derechos reservados.</p>
+        <div class="footer-bottom-links">
+          <a href="#" class="footer-bottom-link" data-i18n="footer.privacy">Política de Privacidad</a>
+          <span aria-hidden="true">·</span>
+          <a href="#" class="footer-bottom-link" data-i18n="footer.legal">Aviso Legal</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

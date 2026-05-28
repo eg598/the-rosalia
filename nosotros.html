@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nosotros — The Rosalia BCN</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ══ HEADER ══ -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo">
+        <img src="images/THEROSALIA.png" alt="The Rosalia BCN" class="logo-img" />
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="reservas.html" class="nav-link" data-i18n="nav.reservas">Reservas</a></li>
+          <li><a href="nosotros.html" class="nav-link" data-i18n="nav.nosotros">Nosotros</a></li>
+          <li><a href="menu.html" class="nav-link" data-i18n="nav.menu">Menú</a></li>
+          <li><a href="#" class="nav-link" data-i18n="nav.franquicias">Franquicias</a></li>
+          <li><a href="eventos.html" class="nav-link" data-i18n="nav.eventos">Eventos</a></li>
+          <li><a href="blog.html" class="nav-link" data-i18n="nav.blog">Blog</a></li>
+        </ul>
+        <div class="lang-switcher">
+          <span class="lang lang--active" data-lang="es">ES</span>
+          <span class="lang-sep">|</span>
+          <span class="lang" data-lang="en">EN</span>
+        </div>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══ PAGE HERO ══ -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow reveal" data-i18n="nos.page-eyebrow">Nuestra Historia</span>
+      <h1 class="section-title reveal reveal--delay-1" data-i18n-html="nos.page-title">
+        El alma de<br /><em>The Rosalia</em>
+      </h1>
+      <p class="section-body reveal reveal--delay-2" data-i18n="nos.page-body">
+        Nacimos del sueño de crear un espacio donde la gastronomía, la música y las emociones se encuentran.
+      </p>
+    </div>
+  </section>
+
+  <!-- ══ CONCEPT SECTION ══ -->
+  <section class="nos-section">
+    <div class="container">
+      <div class="nos-grid">
+
+        <div class="nos-visual reveal">
+          <div class="nos-visual-inner">
+            <img src="images/isologo.png" alt="The Rosalia" class="nos-visual-isologo" />
+            <span class="nos-visual-label">Barcelona · Since 2023</span>
+          </div>
+        </div>
+
+        <div class="reveal reveal--delay-1">
+          <span class="eyebrow" data-i18n="nos.s1-eyebrow">El Concepto</span>
+          <h2 class="section-title" data-i18n-html="nos.s1-title">
+            De día, brunch.<br /><em>De noche, espectáculo.</em>
+          </h2>
+          <p class="section-body" style="text-align:left;margin:0;" data-i18n="nos.s1-body">
+            The Rosalia BCN es un espacio que se transforma. Por la mañana, el aroma del café y los pancakes japoneses dan la bienvenida. Al caer la noche, la música en vivo y los performers crean una atmósfera única en Barcelona.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PHILOSOPHY SECTION (dark) ══ -->
+  <section class="nos-section nos-section--dark">
+    <div class="container">
+      <div class="nos-grid nos-grid--reverse">
+
+        <div class="reveal">
+          <span class="eyebrow" data-i18n="nos.s2-eyebrow">Nuestra Filosofía</span>
+          <h2 class="section-title" data-i18n-html="nos.s2-title">
+            Más allá de<br /><em>la gastronomía</em>
+          </h2>
+          <p class="section-body" data-i18n="nos.s2-body">
+            Creemos que comer bien es solo el comienzo. Cada detalle — desde la música hasta el emplatado — está pensado para crear un momento que merece ser vivido.
+          </p>
+        </div>
+
+        <div class="nos-visual reveal reveal--delay-1" style="background: radial-gradient(ellipse 80% 80% at 30% 40%, rgba(44,24,16,.6) 0%, transparent 60%), radial-gradient(ellipse 70% 70% at 80% 80%, rgba(201,169,110,.15) 0%, transparent 55%), linear-gradient(145deg, #3E2218 0%, #2C1810 50%, #201208 100%);">
+          <div class="nos-visual-inner" style="opacity:.9;">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:20px;">
+              <div style="width:48px;height:48px;color:var(--gold);">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 22V10l14-3v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="8" cy="22" r="3" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="22" cy="19" r="3" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <span style="font-size:10px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);">Live Entertainment</span>
+              <div style="width:48px;height:1px;background:linear-gradient(90deg,transparent,rgba(201,169,110,.4),transparent);"></div>
+              <span style="font-family:'Playfair Display',serif;font-size:20px;color:rgba(255,255,255,.7);font-style:italic;">Cada noche</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ VALUES ══ -->
+  <section class="nos-values">
+    <div class="container" style="text-align:center;">
+      <span class="eyebrow reveal" data-i18n="nos.values-eyebrow">Nuestros Valores</span>
+      <div class="nos-values-grid">
+
+        <article class="card reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M20 8l3 9h9l-7.5 5.5 3 9L20 27l-7.5 4.5 3-9L8 17h9l3-9z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="card-title" data-i18n="nos.v1-title">Creatividad</h3>
+          <p class="card-text" data-i18n="nos.v1-text">Cocina de autor con influencias mediterráneas y asiáticas. Siempre en evolución.</p>
+        </article>
+
+        <article class="card card--featured reveal reveal--delay-1">
+          <div class="card-icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M8 28V16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M14 28V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M20 28V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M26 28V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M32 28V18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="card-title" data-i18n="nos.v2-title">Experiencia</h3>
+          <p class="card-text" data-i18n="nos.v2-text">Cada visita es irrepetible. Del brunch íntimo a la noche más vibrante de Barcelona.</p>
+        </article>
+
+        <article class="card reveal reveal--delay-2">
+          <div class="card-icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M20 6c0 0-14 8-14 18a14 14 0 0 0 28 0C34 14 20 6 20 6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M20 18v8M16 22h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="card-title" data-i18n="nos.v3-title">Autenticidad</h3>
+          <p class="card-text" data-i18n="nos.v3-text">Ingredientes frescos, trato cercano y espacios únicos. Así es The Rosalia.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT / FIND US ══ -->
+  <section class="nos-contact">
+    <div class="container">
+      <span class="eyebrow reveal" data-i18n="nos.contact-eyebrow">Encuéntranos</span>
+      <h2 class="section-title reveal reveal--delay-1" data-i18n-html="nos.contact-title">
+        Ven a<br /><em>conocernos</em>
+      </h2>
+      <div class="nos-contact-grid">
+
+        <div class="nos-contact-card reveal">
+          <div class="nos-contact-icon">
+            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="18" cy="16" r="5" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M18 4C11.373 4 6 9.373 6 16c0 9 12 20 12 20s12-11 12-20c0-6.627-5.373-12-12-12z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <p class="nos-contact-label">Ubicación</p>
+          <p class="nos-contact-val">Barcelona, España<br />Cerca del Port Fòrum</p>
+        </div>
+
+        <div class="nos-contact-card reveal reveal--delay-1">
+          <div class="nos-contact-icon">
+            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="6" width="28" height="22" rx="3" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M4 11l14 9 14-9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <p class="nos-contact-label">Contacto</p>
+          <p class="nos-contact-val">
+            <a href="tel:+34677432810">+34 677 43 28 10</a><br />
+            <a href="mailto:therosaliabcnmanagement@gmail.com" style="word-break:break-all;">therosaliabcnmanagement@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="nos-contact-card reveal reveal--delay-2">
+          <div class="nos-contact-icon">
+            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="18" cy="18" r="13" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M18 10v8l5 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <p class="nos-contact-label">Horario</p>
+          <p class="nos-contact-val">
+            <span data-i18n="nos.h1">Lun – Vie</span> &nbsp; <span data-i18n="nos.h1-val">10:00 – 23:00</span><br />
+            <span data-i18n="nos.h2">Sáb – Dom</span> &nbsp; <span data-i18n="nos.h2-val">9:00 – 23:00</span>
+          </p>
+        </div>
+
+      </div>
+
+      <div style="margin-top:48px;" class="reveal reveal--delay-3">
+        <a href="reservas.html" class="btn btn--gold" data-i18n="reserve.cta">Reservar mesa</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer" id="footer">
+    <div class="container footer-grid">
+      <div class="footer-col footer-col--brand">
+        <img src="images/THEROSALIA.png" alt="The Rosalia BCN" class="footer-logo" />
+        <p class="footer-tagline">Brunch · Dining · Live Music · Barcelona</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/therosaliabcn/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="index.html" class="social-link" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/>
+            </svg>
+          </a>
+          <a href="index.html" class="social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col footer-col--info">
+        <h4 class="footer-heading" data-i18n="footer.contact-heading">Contáctanos</h4>
+        <address class="footer-address" data-i18n="footer.location">Barcelona, España</address>
+        <p class="footer-hours" data-i18n="footer.hours1">Lun – Vie &nbsp; 10:00 – 23:00</p>
+        <p class="footer-hours" data-i18n="footer.hours2">Sáb – Dom &nbsp; 9:00 – 23:00</p>
+        <a href="tel:+34677432810" class="footer-link">+34 677 43 28 10</a>
+        <a href="mailto:therosaliabcnmanagement@gmail.com" class="footer-link">therosaliabcnmanagement@gmail.com</a>
+      </div>
+      <div class="footer-col footer-col--links">
+        <h4 class="footer-heading" data-i18n="footer.explore-heading">Explora</h4>
+        <ul class="footer-nav">
+          <li><a href="menu.html" class="footer-link" data-i18n="footer.menu-link">Menú</a></li>
+          <li><a href="reservas.html" class="footer-link" data-i18n="footer.reservas-link">Reservas</a></li>
+          <li><a href="eventos.html" class="footer-link" data-i18n="footer.eventos-link">Eventos</a></li>
+          <li><a href="#" class="footer-link" data-i18n="footer.franquicias-link">Franquicias</a></li>
+          <li><a href="blog.html" class="footer-link" data-i18n="footer.blog-link">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-col--badge">
+        <img src="images/turisme.png" alt="Barcelona Turisme — Membre" class="footer-badge" />
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p data-i18n="footer.copyright">&copy; 2025 The Rosalia BCN. Todos los derechos reservados.</p>
+        <div class="footer-bottom-links">
+          <a href="#" class="footer-bottom-link" data-i18n="footer.privacy">Política de Privacidad</a>
+          <span aria-hidden="true">·</span>
+          <a href="#" class="footer-bottom-link" data-i18n="footer.legal">Aviso Legal</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
